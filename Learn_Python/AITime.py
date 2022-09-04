@@ -1,12 +1,10 @@
 H, M, S = map(int, input().split())
 T = int(input())
+
 TS = T % 60
 TT = T // 60
 TM = TT % 60
 TH = TT // 60
-
-print(TM)
-print(TH)
 
 H += TH
 M += TM
