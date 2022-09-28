@@ -1,9 +1,6 @@
-print("Enter M : ")
-M = int(input())
-print("Enter ed : ")
-ed = int(input())
-print("Enter n : ")
-n = int(input())
+M = int(input("Enter M : "))
+ed = int(input("Enter ed : "))
+n = int(input("Enter n : "))
 
 NewM = M ** ed
 result = NewM % n
