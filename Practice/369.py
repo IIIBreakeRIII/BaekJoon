@@ -1,6 +1,3 @@
-from ast import Num
-
-
 A = int(input())
 count = 0
 
