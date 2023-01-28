@@ -1,1 +1,1 @@
-# BaekJoon
+# BaekJoon Algo.
