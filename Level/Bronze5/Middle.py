@@ -7,3 +7,4 @@ C = int(input())
 list = [A, B, C]
 list.sort()
 print(list[1])
+
