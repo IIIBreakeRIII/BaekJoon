@@ -4,3 +4,5 @@ NumA = int(input())
 NumB = int(input())
 
 print(NumA - NumB)
+
+i
