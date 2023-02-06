@@ -5,4 +5,4 @@ NumB = int(input())
 
 print(NumA - NumB)
 
-i
+print(NumA + NumB)
