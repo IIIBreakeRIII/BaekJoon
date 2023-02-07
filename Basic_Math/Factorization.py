@@ -24,7 +24,12 @@
 
 # 나눠지는 가장 작은 수를 구하자
 
+import time
+
 N = int(input())
+
+start = time.time()
+
 i = 2
 
 while N != 1:
@@ -33,3 +38,7 @@ while N != 1:
         N = N // i
     else:
         i += 1
+
+end = time.time()
+
+print(f"{end - start:.5f} seconds")
