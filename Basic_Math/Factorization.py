@@ -22,26 +22,14 @@
 #                     if FactorizeNum % i == 0:
 #                         break
 
-import time
+# 나눠지는 가장 작은 수를 구하자
 
 N = int(input())
-FactorizeNum = 2
+i = 2
 
-start = time.time()
-
-while(True):
-    if N % FactorizeNum == 0:
-        print(FactorizeNum)
-        N = N // FactorizeNum
+while N != 1:
+    if N % i == 0:
+        print(i)
+        N = N // i
     else:
-        if FactorizeNum > N:
-            break
-        else:
-            FactorizeNum = FactorizeNum + 1
-            for i in range(2, FactorizeNum):
-                if FactorizeNum % i == 0:
-                        break
-
-end = time.time()
-
-print(f"{end - start:.5f} seconds")
+        i += 1
