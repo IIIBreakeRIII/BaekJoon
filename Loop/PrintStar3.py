@@ -1,3 +1,5 @@
+# No. 2444 별 찍기 - 7
+
 num = int(input())
 temp = 1
 
