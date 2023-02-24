@@ -1,3 +1,5 @@
+# No. 10988 Palindrome
+
 Word = input()
 
 WordList = list(Word)
