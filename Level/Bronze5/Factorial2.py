@@ -1,5 +1,3 @@
-# No. 27433 팩토리얼2
-
 Num = int(input())
 
 result = 1
