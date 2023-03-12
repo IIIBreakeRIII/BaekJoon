@@ -1,3 +1,5 @@
+# No. 1181 단어 정렬
+
 Num = int(input())
 
 WordList = []
