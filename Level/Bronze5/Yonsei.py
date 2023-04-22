@@ -1,3 +1,5 @@
+# No. 15680 연세대학교
+
 Num = int(input())
 
 if Num == 0:
