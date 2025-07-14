@@ -13,6 +13,7 @@ import tracemalloc  # for memory allocation tracing (docs.python.org)
 import argparse  # for CLI interface (docs.python.org)
 import matplotlib.pyplot as plt  # for plotting results (matplotlib.org)
 
+from quick_sort import quick_sort_gen_rnd_list
 
 def measure(func, input_sizes):
     """
@@ -89,15 +90,15 @@ def main():
     input_sizes = args.sizes
 
     # TODO: Replace or modify this function with your own target algorithm
-    def eratosthenes(n):
-        sieve = [True] * (n + 1)
-        for p in range(2, int(n**0.5) + 1):
-            if sieve[p]:
-                for i in range(p*p, n + 1, p):
-                    sieve[i] = False
-        return [i for i, prime in enumerate(sieve) if prime and i >= 2]
+    # def eratosthenes(n):
+    #     sieve = [True] * (n + 1)
+    #     for p in range(2, int(n**0.5) + 1):
+    #         if sieve[p]:
+    #             for i in range(p*p, n + 1, p):
+    #                 sieve[i] = False
+    #     return [i for i, prime in enumerate(sieve) if prime and i >= 2]
 
-    times, mem_mib, mem_kib = measure(eratosthenes, input_sizes)
+    times, mem_mib, mem_kib = measure(quick_sort_gen_rnd_list, input_sizes)
     plot_results(input_sizes, times, mem_mib, mem_kib)
 
 
