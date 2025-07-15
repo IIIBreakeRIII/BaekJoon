@@ -1,26 +1,25 @@
-n = int(input())
- 
-def attack(x):
-    for i in range(x): 
-        if row[x] == row[i] or abs(row[x] - row[i]) == abs(x - i):
-            return True
+def Check(depth):
+    for i in range(depth):
+        if board[depth] == board[i] or abs(board[depth] - board[i]) == depth - i:
+            return False
+    return True
 
-    return False
- 
-def dfs(start):
-    global cnt
+def DFS(depth):
+    global result
 
-    if start == n: 
-        cnt += 1
-    else:
-        for i in range(n):
-            row[start] = i
-            if not attack(start):
-                print(start + 1)
-                dfs(start + 1)
- 
-row = [0] * n
-cnt = 0
-dfs(0)
- 
-print(cnt)
+    if depth == N:
+        result += 1
+        return
+
+    for i in range(N):
+        board[depth] = i
+        if Check(depth):
+            DFS(depth + 1)
+
+
+N = int(input())
+board = [0 for i in range(N)]
+result = 0
+
+DFS(0)
+print(result)
