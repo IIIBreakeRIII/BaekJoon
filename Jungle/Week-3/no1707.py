@@ -33,6 +33,7 @@ for _ in range(testcase):
     answer = "YES"
 
     vertice, edge = map(int, input().split())
+
     graph = [[] for _ in range(vertice + 1)]
 
     for i in range(edge):
